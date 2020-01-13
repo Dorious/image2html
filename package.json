@@ -6,10 +6,13 @@
     "image2html": "image2html.mjs"
   },
   "main": "lib/image2html.js",
-  "engines" : { "node" : ">=13.6.0" },
+  "engines": {
+    "node": ">=13.6.0"
+  },
   "scripts": {
     "es5": "",
-    "test": "mocha"
+    "eslint": "eslint . --ext .mjs",
+    "test": "mocha --require esm"
   },
   "repository": {
     "type": "git",
@@ -40,6 +43,8 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "esm": "^3.2.25",
     "mocha": "^7.0.0"
   }
 }

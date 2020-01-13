@@ -9,9 +9,12 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaVersion": 2020,
         "sourceType": "module"
     },
+    "plugins": [
+        "babel"
+    ],
     "rules": {
         "indent": [
             "error",
@@ -28,6 +31,14 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "babel/new-cap": 0,
+        "babel/camelcase": 0,
+        "babel/no-invalid-this": 1,
+        "babel/object-curly-spacing": 1,
+        "babel/quotes": 1,
+        "babel/semi": 1,
+        "babel/no-unused-expressions": 1,
+        "babel/valid-typeof": 1
     }
 }
